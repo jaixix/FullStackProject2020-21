@@ -1,0 +1,87 @@
+#top{
+	background: url(https://image.freepik.com/free-vector/colorful-skyline-dubai_23-2147520361.jpg);
+	/*background-position*/	
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 150px;
+	display: flex;
+	background-position: 1% 10%;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid grey;
+	font-size: 80px;
+	word-spacing: 20px;
+	/*letter-spacing: -3px;*/
+	color:black;
+}
+
+.backBTN:hover{
+	color:blue;
+}
+
+.container{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.backBTN{
+	background-color: black;
+	color:white;
+ 	/*margin-right:100px;*/
+ 	position: relative;
+ 	text-decoration: none;
+ 	right:29%;
+ 	bottom:27%;
+ 	border-radius: 90%;
+ 	height: 50px;
+ 	width: 50px;
+ 	font-size: 30px;
+
+ 	text-align: center;
+ 	justify-content: center;
+ 	align-items: center;
+ 	display: flex;
+}
+
+#foot{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn{
+	margin-top:10px;
+}
+
+ul{ 
+	list-style: none;
+	text-align: center;
+	word-spacing: 20px;
+	margin: auto;
+}
+
+a{
+ 	text-decoration: none!important;
+
+}
+
+li{
+	display: inline;
+	letter-spacing: 1px;
+	font-size: 1.8em;
+	/*display: flex;*/
+	text-align: center;	
+	justify-content: center;
+	align-items: center;
+}
+
+i.two{
+	color: black;
+}
+
+.jumbotron.three{
+	margin-top: 15px;
+	padding:10px;
+	
+}
