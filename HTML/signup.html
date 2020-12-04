@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/fb65f5d132.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+            </div>
+            <form id="in" class="input-group" >
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">sign In</button>
+            </form>
+            <form id="up" class="input-group" >
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+                <button type="submit" class="submit-btn">sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById("in");
+        var y = document.getElementById("up");
+        var z = document.getElementById("btn");
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function signin(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>
