@@ -29,6 +29,10 @@ hr{
 	border-bottom: rgba(0,0,0,0.8);
 }
 
+.row{
+	margin-top:15%;
+}
+
 footer{
 	text-align: center;
 	font-size: 20px;
