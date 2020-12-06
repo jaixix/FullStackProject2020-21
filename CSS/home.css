@@ -30,6 +30,8 @@ footer{
     justify-content: space-between;
     flex-direction: row;
     padding: 10px;
+    font-size: larger;
+    padding-right: 90px;
 }  
 .about{
     width: 40%;
@@ -99,7 +101,7 @@ i{
 .sec-3{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 .sec-3 ul{
     list-style: none;
