@@ -3,7 +3,7 @@ html{
 }
 
 body{
-	background: url(https://images.unsplash.com/photo-1558197464-73ae8a1fc0f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTIyfHxjb2xsZWdlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+	background: url(../Images/matteo-grando-xBlLcP1H1WY-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -29,7 +29,12 @@ hr{
 	border-bottom: rgba(0,0,0,0.8);
 }
 
+.row{
+	margin-top:15%;
+}
+
 footer{
+	margin-top: -8%;
 	text-align: center;
 	font-size: 20px;
 	color: white;
