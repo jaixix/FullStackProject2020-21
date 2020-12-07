@@ -15,6 +15,9 @@
 	/*letter-spacing: -3px;*/
 	color:black;
 }
+#top p {
+	text-align: center;
+}
 
 .backBTN:hover{
 	color:blue;
