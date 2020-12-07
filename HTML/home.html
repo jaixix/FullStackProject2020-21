@@ -35,15 +35,82 @@
 			margin-left: 450px;
 			margin-top: 80px;
 		}
-		ul li:hover{
-			background-color: rgb(235, 231, 231);
+		.header{
+			background-color: rgb(158, 154, 154);
+			width: 100%;
+			height: 70px;
+			display: flex;
+			/* justify-content: space-evenly; */
+			align-items: center;
+			position: sticky;
+			top: 0;
+			z-index: 100;
+			margin-bottom: 50px;
 		}
+		.header h2{
+			color: white;
+			line-height: 70px;
+			text-transform: uppercase;
+		}
+		.header img{
+			margin-left: 50px;
+		}
+		
+		.menu{
+			list-style: none;
+			text-align: center;
+			justify-content: space-evenly;
+			float: right;
+		}
+		.menu li{
+			display: inline-block;
+			line-height: 70px;
+			position: relative;
+		}
+		.menu li a{
+			display: block;
+			text-decoration: none;
+			color: white;
+			/* padding: 10px 20px; */
+			font-size: 18px;
+			width: 180px;
+			transition: 0.5s;
+		}
+		.menu li a:hover{
+			background-color: rgb(209, 123, 123);
+			border-radius: 20px;
+		}
+		.submenu1{
+			position: absolute;
+			background-color: rgb(158, 154, 154);
+			width: 180px;
+			left: 0;
+			display: none;
+		}
+		.submenu2{
+			position: absolute;
+			background-color:rgb(158, 154, 154);
+			width: 180px;
+			left: 100%;
+			top: 0;
+			display: none;
+		}
+		.submenu2 li a, .submenu1 li a{
+			border:1px solid 	rgb(88, 84, 84);
+		}
+		.menu li:hover .submenu1{
+			display: block;
+		}
+		.submenu1 li:hover .submenu2{
+			display: block;
+		}
+		
 	</style>
 
 </head>
 <body>
 
-	<nav class="navbar navbar-default navabar-fixed-top">
+	<!-- <nav class="navbar navbar-default navabar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-demo" aria-expanded="false">
@@ -62,15 +129,58 @@
 					<li><a href="contact.html" target="blank">Contact</a></li>
 				</ul>
 
-				<!-- <ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="./HTML/signup.html" target="_blank">Sign Up<i class="fas fa-user-plus"></i></a></li>
 					<li><a href="./HTML/signup.html" target="_blank">Sign in<i class="fas fa-user"></i></a></li>
-				</ul> -->
+				</ul>
 			</div>
 
 		</div>	
-	</nav>
+	</nav> -->
 
+	<div class="header">
+		<img src="../Images/pac.png" alt="" style="height: 70px;width: 70px;">
+		<h2>Pick-A-College</h2>
+		<ul class="menu">
+			<li><a href="#"><i class="fas fa-home two" style="padding-right: 10px; color: white;"></i>Home</a></li>
+			<li><a href="./about.html"><i class="fas fa-info" style="padding-right: 10px; color: white;"></i>About</a></li>
+			<li><a href="#"><i class="fas fa-city" style="padding-right: 10px; color: white;"></i>Select State<i class="fas fa-caret-down" style="padding-left: 5px; color: white;"></i></a>
+				<ul class="submenu1">
+					<li><a href="#">Uttar Pradesh<i class="fas fa-caret-right" style="padding-left: 10px; color: white;"></i></a>
+					<ul class="submenu2">
+						<li><a href="./collegePages/gla.html">GLA University</a></li>
+						<li><a href="./collegePages/galgotia.html">Galgotias University</a></li>
+						<li><a href="./collegePages/jaypee.html">Jaypee Institute</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Punjab<i class="fas fa-caret-right" style="padding-left: 10px; color: white;"></i></a>
+						<ul class="submenu2">
+							<li><a href="./collegePages/thapar.html">Thappar Institute</a></li>
+							<li><a href="./collegePages/graphicEra.html">Graphic Era</a></li>
+						</ul></li>
+					<!-- <li><a href="#">Delhi<i class="fas fa-caret-right" style="padding-left: 10px; color: white;"></i></a>
+						<ul class="submenu2">
+							<li><a href="#">GLA UNIVERSITY</a></li>
+							<li><a href="#">GALGOTIA</a></li>
+						</ul></li> -->
+					<li><a href="#">Haryahna<i class="fas fa-caret-right" style="padding-left: 10px; color: white;"></i></a>
+						<ul class="submenu2">
+							<li><a href="./collegePages/ashoka.html">Ashoka University</a></li>
+							<li><a href="#">GALGOTIA</a></li>
+						</ul></li>
+					<li><a href="#">Dehradun<i class="fas fa-caret-right" style="padding-left: 10px; color: white;"></i></a>
+						<ul class="submenu2">
+							<li><a href="./collegePages/dit.html">DIT</a></li>
+							<li><a href="./collegePages/upes.html">UPES</a></li>
+							<li><a href="./collegePages/graphicEra.html">Graphic Era</a></li>
+						</ul></li>
+				</ul>
+				</li>
+			<li><a href="#"><i class="fas fa-id-card" style="padding-right: 10px; color: white;"></i>Contact</a></li>
+			<li><a href="#"><i class="fas fa-newspaper" style="padding-right: 10px; color:white;"></i>News</a></li>
+			
+		</ul>
+	</div>
     <div class="container">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -337,8 +447,9 @@
         </ul>
         </section>
         <section class="sec-4">
-            <p><i class="fa fa-copyright"></i> 2020 : PICK-A-COLLEGE</a></p>
-            
+			<p><i class="fa fa-copyright"></i> 2020 : PICK-A-COLLEGE</a></p> &nbsp; ||	&nbsp;
+			<div><p>Made With ❤ &nbsp; || &nbsp;  By Mansi & Jaideep</p>
+            </div>
         </section>
     </footer>
 </body>
