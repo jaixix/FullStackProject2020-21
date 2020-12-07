@@ -8,7 +8,96 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<style>
+	.content{
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.content2{
+    text-align: center;
+    margin-right: 300px;
+    margin-top:100px;
+}
+.content3{
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 80px;
+}
+.header{
+    background-color: rgb(158, 154, 154);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 50px;
+}
+.header h2{
+    color: white;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.header img{
+    margin-left: 50px;
+}
+
+.menu{
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+    float: right;
+}
+.menu li{
+    display: inline-block;
+    line-height: 70px;
+    position: relative;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    /* padding: 10px 20px; */
+    font-size: 20px;
+    width: 180px;
+	transition: 0.5s;
+	padding-top: 0;
+	margin-top: 0;
+}
+.menu li a:hover{
+    background-color: rgb(209, 123, 123);
+    border-radius: 20px;
+}
+.submenu1{
+    position: absolute;
+    background-color: rgb(158, 154, 154);
+    width: 180px;
+    left: 0;
+    display: none;
+}
+.submenu2{
+    position: absolute;
+    background-color:rgb(158, 154, 154);
+    width: 180px;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+.submenu2 li a, .submenu1 li a{
+    border:1px solid 	rgb(88, 84, 84);
+}
+.menu li:hover .submenu1{
+    display: block;
+}
+.submenu1 li:hover .submenu2{
+    display: block;
+}
+
+	</style>
 </head>
 <body>
 
@@ -47,7 +136,7 @@
 				</li>
 			<li><a href="contact.html"><i class="fas fa-id-card" style="padding-right: 10px; color: white;"></i>Contact</a></li>
 			<li><a href="#latest"><i class="fas fa-newspaper" style="padding-right: 10px; color:white;"></i>News</a></li>
-			<li><a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true" style="padding-right: 10px; color: white;"></i>Sign-Up or Sign-In</a></li>
+			<li><a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true" style="padding-right: 10px; color: white;"></i>Sign-Up/Sign-In</a></li>
 				
 		</ul>
 	</div>
